@@ -6,8 +6,8 @@ const port = 3000
 app.use(bodyParser.json())
 
 function middleware1(req, res, next) {
-    console.log(`from inside middleware with key ${req.body.key}`);
-    if (req.body.key == "mks") {
+    console.log(`from inside middleware with key ${req.query.key}`);
+    if (req.query.key == "mks") {
         next();
     }
     else{
@@ -50,6 +50,11 @@ function deleteUser(req, res) {
 app.post('/user', createUser)
 app.get('/user', getUser)
 app.delete('/user', deleteUser)
+
+function givePage(req, res) {
+    res.sendFile(__dirname+"/index.html")
+}
+app.get('/', givePage)
 
 function started() {
     console.log(`Example code listening on port ${port}`)
