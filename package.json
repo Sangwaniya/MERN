@@ -1,0 +1,17 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "All example and practice set",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "fs": "^0.0.1-security",
+    "swiper": "^10.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
