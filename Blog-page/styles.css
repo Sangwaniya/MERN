@@ -1,0 +1,29 @@
+body {
+    color: #333;
+    background-color: rgb(236, 224, 206);
+    font-family: href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CPT+Sans:400,400italic,700,700italic%7CPT+Sans+Narrow:regular,700%7CPT+Sans+Narrow:regular,700%7CSpace+Mono:regular,italic,700,700italic%7CPoppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic%7CInter:100,200,300,regular,500,600%7CLexend:300,regular,500,600,700&subset=cyrillic,cyrillic-ext,latin,latin-ext,cyrillic,cyrillic-ext,latin,latin-ext";
+    font-size: 14px;
+    line-height: 135%;
+}
+
+.heading-des-container {
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 100px !important;
+    display: flex;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 40px;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+
+.section-3 {
+    background-color: #ece0ce;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
