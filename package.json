@@ -6,6 +6,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "fs": "^0.0.1-security",
+    "postman2openapi": "^1.0.0",
     "swiper": "^10.1.0"
   },
   "scripts": {
