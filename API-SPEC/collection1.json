@@ -1,0 +1,454 @@
+{
+    "info": {
+        "_postman_id": "cac716f5-0907-4f02-9901-d47f93c9e451",
+        "name": "Product Alert Service Sandbox",
+        "description": "Product Alert Service.\n\nContact Support:\n Name: API Support",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "899031"
+    },
+    "item": [
+        {
+            "name": "Get Hardware End of Life Alerts",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "x-Bypass-value",
+                        "value": "R0NpFWK3pdEA",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "{{Authorization}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"inputdata\": [\n        {\n            \"physicalType\": \"chassis\",\n            \"productID\": [\n                \"CPW1422\",\n                \"CPW1422\"\n            ]\n        }\n    ]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/hardware-eox",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "hardware-eox"
+                    ]
+                },
+                "description": "Responds with the HWEOXOutput."
+            },
+            "response": [
+                {
+                    "name": "OK",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[\n  {\n    \"physicalType\": \"laborum fugiat Lorem esse\",\n    \"productID\": \"Lorem amet magna\"\n  },\n  {\n    \"physicalType\": \"aliquip dolore laboris fugiat dolore\",\n    \"productID\": \"laborum in quis\"\n  }\n]",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/hardware-eox",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "hardware-eox"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "body": "[\n  {\n    \"bulletinName\": \"magna eiusmod sunt\",\n    \"bulletinNumber\": \"voluptate ipsum\",\n    \"bulletinPID\": \"sint ullamco laborum ex\",\n    \"bulletinURL\": \"tempor ea\",\n    \"endOfBUEngineeringSupportTACDate\": -36641515,\n    \"endOfHardwareNewServiceAttachmentDate\": -69783198,\n    \"endOfHardwareRoutineFailureAnalysisDate\": -37253991,\n    \"endOfHardwareServiceContractRenewalDate\": 18115489,\n    \"endOfLastDateOfSupport\": -65278534,\n    \"endOfLastHardwareShipDate\": 30247085,\n    \"endOfLifeExternalAnnouncementDate\": 5124607,\n    \"endOfLifeInternalAnnouncementDate\": -4666729,\n    \"endOfSaleDate\": -74429071,\n    \"endOfSignatureReleasesDate\": -67156457,\n    \"endOfSoftwareAvailabilityDate\": 55413467,\n    \"endOfSoftwareLicenseAvailabilityDate\": -69814672,\n    \"endOfSoftwareMaintenanceReleasesDate\": 64218158,\n    \"endOfSoftwareVulnerabilityOrSecuritySupportDate\": -96064404,\n    \"hardwareEOXId\": 25541905,\n    \"migrationDetails\": [\n      {\n        \"migration_pai_code\": \"Excepteur non sunt\",\n        \"migration_pai_description\": \"esse tempor in\",\n        \"migration_pai_text\": \"proident ullamco \",\n        \"migration_pid\": \"in qui veniam\",\n        \"migration_product_data_url\": \"fugiat nostrud Excepteur veniam\",\n        \"migration_product_model\": \"dolor mollit d\",\n        \"migration_product_page_url\": \"esse Exc\",\n        \"migration_product_paper_url\": \"minim culpa et do eu\",\n        \"migration_product_series\": \"commodo incididunt laborum non\",\n        \"migration_promotion_text\": \"laborum ullamco sunt\",\n        \"migration_promotion_url\": \"cupidatat\"\n      },\n      {\n        \"migration_pai_code\": \"magna nulla\",\n        \"migration_pai_description\": \"dolore dolor aute\",\n        \"migration_pai_text\": \"adipisicing\",\n        \"migration_pid\": \"dolor Lorem\",\n        \"migration_product_data_url\": \"deserunt incididunt in\",\n        \"migration_product_model\": \"magna consectetur et in voluptate\",\n        \"migration_product_page_url\": \"Excepteur Duis elit anim\",\n        \"migration_product_paper_url\": \"dolor in aliqua adipisicing in\",\n        \"migration_product_series\": \"l\",\n        \"migration_promotion_text\": \"voluptate culpa veniam adipisi\",\n        \"migration_promotion_url\": \"sed non adipisicing\"\n      }\n    ],\n    \"mileStoneDetails\": [\n      {\n        \"bulletinNumber\": \"fugiat ad\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": 50867435,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": -37036071\n      },\n      {\n        \"bulletinNumber\": \"\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": 96132984,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": -40522747\n      }\n    ],\n    \"physicalTypeName\": \"elit Duis eu tempor\",\n    \"postDate\": 70559059\n  },\n  {\n    \"bulletinName\": \"Ut magna\",\n    \"bulletinNumber\": \"tempor sit dolor culpa\",\n    \"bulletinPID\": \"deserunt tempor\",\n    \"bulletinURL\": \"esse Lorem ipsum\",\n    \"endOfBUEngineeringSupportTACDate\": -77243298,\n    \"endOfHardwareNewServiceAttachmentDate\": 7939307,\n    \"endOfHardwareRoutineFailureAnalysisDate\": -1080044,\n    \"endOfHardwareServiceContractRenewalDate\": 82486356,\n    \"endOfLastDateOfSupport\": 17248707,\n    \"endOfLastHardwareShipDate\": 80208314,\n    \"endOfLifeExternalAnnouncementDate\": -74459977,\n    \"endOfLifeInternalAnnouncementDate\": 6314868,\n    \"endOfSaleDate\": -33344630,\n    \"endOfSignatureReleasesDate\": -82631360,\n    \"endOfSoftwareAvailabilityDate\": 11186897,\n    \"endOfSoftwareLicenseAvailabilityDate\": 35020812,\n    \"endOfSoftwareMaintenanceReleasesDate\": 45033666,\n    \"endOfSoftwareVulnerabilityOrSecuritySupportDate\": 72695930,\n    \"hardwareEOXId\": 47273846,\n    \"migrationDetails\": [\n      {\n        \"migration_pai_code\": \"magna\",\n        \"migration_pai_description\": \"anim\",\n        \"migration_pai_text\": \"eu sit aliquip id\",\n        \"migration_pid\": \"enim dolor deserunt Duis\",\n        \"migration_product_data_url\": \"sed Excepteur cupidatat incididunt\",\n        \"migration_product_model\": \"ex sint qui Excepteur quis\",\n        \"migration_product_page_url\": \"elit eiusmod in\",\n        \"migration_product_paper_url\": \"veniam adipisicing qui\",\n        \"migration_product_series\": \"quis voluptate\",\n        \"migration_promotion_text\": \"Ut cillum nulla\",\n        \"migration_promotion_url\": \"pariatur officia eiusmod nulla\"\n      },\n      {\n        \"migration_pai_code\": \"non officia\",\n        \"migration_pai_description\": \"do voluptate cillum\",\n        \"migration_pai_text\": \"deserunt dolore commodo\",\n        \"migration_pid\": \"voluptate in ea et\",\n        \"migration_product_data_url\": \"fugiat\",\n        \"migration_product_model\": \"dolor do fugiat qui\",\n        \"migration_product_page_url\": \"anim\",\n        \"migration_product_paper_url\": \"sit dolore ea\",\n        \"migration_product_series\": \"amet in consectetur id\",\n        \"migration_promotion_text\": \"do Excepteur consequat cillum\",\n        \"migration_promotion_url\": \"incididunt dolor ex\"\n      }\n    ],\n    \"mileStoneDetails\": [\n      {\n        \"bulletinNumber\": \"mollit anim\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": 62300203,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": 18981290\n      },\n      {\n        \"bulletinNumber\": \"in amet minim sunt\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": -14683303,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": 95013176\n      }\n    ],\n    \"physicalTypeName\": \"minim voluptate velit\",\n    \"postDate\": -45680842\n  }\n]"
+                }
+            ]
+        },
+        {
+            "name": "Get Hardware Field Notice Alerts",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "x-Bypass-value",
+                        "value": "R0NpFWK3pdEA",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "{{Authorization}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"CavId\": \"\",\n    \"CavBuId\": \"\",\n    \"SerialNumber\": \"\",\n    \"inputdata\": [\n        {\n            \"physicalType\": \"chassis\",\n            \"productID\": [\n                \"WS-C3560V2-48PS-S\"\n            ],\n            \"affectedVid\": \"\",\n            \"hardwareRevision\": \"\",\n            \"printedCircuitBoardNumber\": \"\",\n            \"printedCircuitBoardRevisionNumber\": \"\",\n            \"serialNumber\": \"\",\n            \"topAssemblyNumber\": \"\",\n            \"topAssemblyRevisionNumber\": \"\"\n        }\n    ]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/hardware-fn",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "hardware-fn"
+                    ]
+                },
+                "description": "Responds with the FNOutput."
+            },
+            "response": [
+                {
+                    "name": "OK",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[\n  {\n    \"physicalType\": \"irure esse enim quis\",\n    \"productID\": \"eu dolore la\",\n    \"affectedVid\": \"voluptate id\",\n    \"hardwareRevision\": \"qui id\",\n    \"printedCircuitBoardNumber\": \"ullamco nostrud\",\n    \"printedCircuitBoardRevisionNumber\": \"Excepteur veniam consequat consectetur\",\n    \"serialNumber\": \"irure velit occaecat commodo\",\n    \"topAssemblyNumber\": \"et consequat dolor ullamco velit\",\n    \"topAssemblyRevisionNumber\": \"culpa consequat nulla nisi enim\"\n  },\n  {\n    \"physicalType\": \"Lorem occaecat\",\n    \"productID\": \"laboris\",\n    \"affectedVid\": \"irure ut aliqua minim\",\n    \"hardwareRevision\": \"magna eu nulla tempor labore\",\n    \"printedCircuitBoardNumber\": \"dolor\",\n    \"printedCircuitBoardRevisionNumber\": \"Ut non esse dolore\",\n    \"serialNumber\": \"ea\",\n    \"topAssemblyNumber\": \"tempor deserunt\",\n    \"topAssemblyRevisionNumber\": \"Duis\"\n  }\n]",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/hardware-fn",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "hardware-fn"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "body": "[\n  [\n    {\n      \"caveat\": \"esse\",\n      \"content\": {\n        \"background\": \"sint ad incididunt dolor\",\n        \"fieldNoticeID\": 74231476,\n        \"hardwareLevels\": \"ut cupidatat\",\n        \"problemDescription\": \"sunt laboris ea\",\n        \"problemSymptoms\": \"sit\",\n        \"upgradeProgram\": \"ipsum officia\",\n        \"workaround\": \"nisi velit laborum\"\n      },\n      \"distributionCode\": \"magna nulla\",\n      \"fieldNoticeID\": -75448523,\n      \"fieldNoticeName\": \"incididunt Excepteur\",\n      \"fieldNoticeTypeCode\": \"adipisicing reprehenderit Excepteur quis\",\n      \"fieldNoticeURL\": \"dolore ex officia\",\n      \"firstPublishDate\": 79366893,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 25669497,\n        \"matchConfidence\": \"culpa nisi tempor officia\",\n        \"matchDefinition\": \"nisi occaecat labore do\",\n        \"matchReason\": \"culpa dolo\"\n      },\n      \"isSerialNumberAvailableCode\": \"ut laborum in aute officia\",\n      \"lastRevisionDate\": -34245881,\n      \"publishUserID\": \"ea sed qui quis\",\n      \"status\": \"ut veniam ad \"\n    },\n    {\n      \"caveat\": \"sit magna voluptate\",\n      \"content\": {\n        \"background\": \"exercitation dolor consectetur\",\n        \"fieldNoticeID\": 49827485,\n        \"hardwareLevels\": \"quis deserunt\",\n        \"problemDescription\": \"sint dolor in non\",\n        \"problemSymptoms\": \"aliqua sit reprehenderit ea\",\n        \"upgradeProgram\": \"non\",\n        \"workaround\": \"id\"\n      },\n      \"distributionCode\": \"non\",\n      \"fieldNoticeID\": 82661104,\n      \"fieldNoticeName\": \"do amet non Ut\",\n      \"fieldNoticeTypeCode\": \"adipisicing labore\",\n      \"fieldNoticeURL\": \"magna sit\",\n      \"firstPublishDate\": -9624861,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 23881340,\n        \"matchConfidence\": \"nostrud elit qui Ut\",\n        \"matchDefinition\": \"occaecat aute labore dolore\",\n        \"matchReason\": \"laboris mollit\"\n      },\n      \"isSerialNumberAvailableCode\": \"ipsum pariatur\",\n      \"lastRevisionDate\": 84815185,\n      \"publishUserID\": \"sunt do\",\n      \"status\": \"in consequat occaecat\"\n    }\n  ],\n  [\n    {\n      \"caveat\": \"labore nostrud\",\n      \"content\": {\n        \"background\": \"anim eu officia\",\n        \"fieldNoticeID\": 91293407,\n        \"hardwareLevels\": \"ex dolor Lorem\",\n        \"problemDescription\": \"ipsum anim dolor dolore\",\n        \"problemSymptoms\": \"cupidatat \",\n        \"upgradeProgram\": \"occaecat qui\",\n        \"workaround\": \"officia laborum dolore\"\n      },\n      \"distributionCode\": \"voluptate quis sed do\",\n      \"fieldNoticeID\": 33329023,\n      \"fieldNoticeName\": \"magna consequat veniam sint est\",\n      \"fieldNoticeTypeCode\": \"occaecat Lorem\",\n      \"fieldNoticeURL\": \"eu minim amet ad\",\n      \"firstPublishDate\": 1053922,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 44012150,\n        \"matchConfidence\": \"culpa adipisicing consectetur id\",\n        \"matchDefinition\": \"in \",\n        \"matchReason\": \"fugiat sed est Excepteur\"\n      },\n      \"isSerialNumberAvailableCode\": \"fugiat\",\n      \"lastRevisionDate\": -72596047,\n      \"publishUserID\": \"quis nisi pariatur\",\n      \"status\": \"laborum\"\n    },\n    {\n      \"caveat\": \"proident nostrud in et\",\n      \"content\": {\n        \"background\": \"Lorem anim dolor\",\n        \"fieldNoticeID\": 41874294,\n        \"hardwareLevels\": \"incididunt\",\n        \"problemDescription\": \"tempor ullamco nos\",\n        \"problemSymptoms\": \"ullamco cillum ipsum\",\n        \"upgradeProgram\": \"magna mollit voluptate anim\",\n        \"workaround\": \"deserunt officia nostrud velit\"\n      },\n      \"distributionCode\": \"ea enim Ut\",\n      \"fieldNoticeID\": -15699903,\n      \"fieldNoticeName\": \"irure aute anim\",\n      \"fieldNoticeTypeCode\": \"in\",\n      \"fieldNoticeURL\": \"id do pariatur anim\",\n      \"firstPublishDate\": 42131093,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 79119178,\n        \"matchConfidence\": \"ea ut laborum incididunt dolor\",\n        \"matchDefinition\": \"cillum cupidatat dolor enim do\",\n        \"matchReason\": \"amet consect\"\n      },\n      \"isSerialNumberAvailableCode\": \"aliquip Duis nostrud in et\",\n      \"lastRevisionDate\": -56197428,\n      \"publishUserID\": \"ipsum ullamco\",\n      \"status\": \"do\"\n    }\n  ]\n]"
+                }
+            ]
+        },
+        {
+            "name": "Get Software End of Life Alerts",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "{{Authorization}}",
+                        "type": "text"
+                    },
+                    {
+                        "key": "x-Bypass-value",
+                        "value": "R0NpFWK3pdEA",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"CavId\": \"\",\n    \"CavBuId\": \"\",\n    \"SerialNumber\": \"\",\n    \"inputdata\": [\n        {\n            \"ostype\": \"IOS\",\n            \"osversion\": \"12.0\",\n            \"cardPID\": [\n                \"SyncServer S600\"\n            ],\n            \"devicePID\": [\n                \"SyncServer S600\"\n            ]\n        }\n    ]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/software-eox",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "software-eox"
+                    ]
+                },
+                "description": "Responds with the SoftwareEOXOutput."
+            },
+            "response": [
+                {
+                    "name": "OK",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[\n  {\n    \"ostype\": \"ex laborum nisi\",\n    \"osversion\": \"quis Duis occaecat in\",\n    \"cardPID\": [\n      \"ullamco quis\",\n      \"elit exercitation in\"\n    ],\n    \"devicePID\": [\n      \"ut magna Lorem\",\n      \"exercitation adipisicing consectetur ullamco aliqua\"\n    ]\n  },\n  {\n    \"ostype\": \"anim dolore iru\",\n    \"osversion\": \"ad qui\",\n    \"cardPID\": [\n      \"sed labore\",\n      \"qui magna laborum nisi dolor\"\n    ],\n    \"devicePID\": [\n      \"mollit tempor deserunt nostrud nisi\",\n      \"elit Duis cupidatat qui\"\n    ]\n  }\n]",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/software-eox",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "software-eox"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "body": "[\n  {\n    \"buEngrSupportEndDate\": 81241938,\n    \"bulletinHeadline\": \"non irure ut proident\",\n    \"bulletinNumber\": \"nostrud\",\n    \"bulletinURL\": \"pariatur quis voluptate sit\",\n    \"endOfSaleDate\": 67519199,\n    \"eoSecurityVulSupportDate\": -84841123,\n    \"externalAnnounceDate\": -19852776,\n    \"failureAnalysisEndDate\": 17894618,\n    \"internalAnnounceDate\": 90965352,\n    \"lastShipDate\": -63826856,\n    \"lastSupportDate\": 10430736,\n    \"maintEndDate\": -24083960,\n    \"mileStoneDetails\": [\n      {\n        \"bulletinNumber\": \"dolore cillum pariatur\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": 32609956,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": 30418177\n      },\n      {\n        \"bulletinNumber\": \"proident\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": 60636036,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": 81279660\n      }\n    ],\n    \"postDate\": -32464527,\n    \"signatureRelDate\": 62915055,\n    \"softwareEOXId\": 20521776,\n    \"svcAttachEndDate\": 19664922,\n    \"svcRenewalEndDate\": -96108087,\n    \"swAvailDate\": 97157718,\n    \"swLicenseAvailDate\": -22766826\n  },\n  {\n    \"buEngrSupportEndDate\": -23638206,\n    \"bulletinHeadline\": \"proident eiusmod\",\n    \"bulletinNumber\": \"ut dolore\",\n    \"bulletinURL\": \"eu culpa consectetur Lorem aliquip\",\n    \"endOfSaleDate\": 4621740,\n    \"eoSecurityVulSupportDate\": 7717134,\n    \"externalAnnounceDate\": 52477845,\n    \"failureAnalysisEndDate\": -43797685,\n    \"internalAnnounceDate\": 39565734,\n    \"lastShipDate\": -14478779,\n    \"lastSupportDate\": 25834617,\n    \"maintEndDate\": 14265807,\n    \"mileStoneDetails\": [\n      {\n        \"bulletinNumber\": \"in aliqua culpa dolor dolore\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": -29317086,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": -94071609\n      },\n      {\n        \"bulletinNumber\": \"dolore\",\n        \"currentMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"eoxAlertID\": 84504675,\n        \"nextMilestones\": [\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"milestone\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"referenceDate\": 7244908\n      }\n    ],\n    \"postDate\": -70725916,\n    \"signatureRelDate\": 98892150,\n    \"softwareEOXId\": -1999742,\n    \"svcAttachEndDate\": 21521364,\n    \"svcRenewalEndDate\": 9410695,\n    \"swAvailDate\": 73315169,\n    \"swLicenseAvailDate\": -12143633\n  }\n]"
+                }
+            ]
+        },
+        {
+            "name": "Get Software Field Notice Alerts",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "{{Authorization}}",
+                        "type": "text"
+                    },
+                    {
+                        "key": "x-Bypass-value",
+                        "value": "R0NpFWK3pdEA",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"CavId\": \"\",\n    \"CavBuId\": \"\",\n    \"SerialNumber\": \"\",\n    \"inputdata\": [\n        {\n            \"osType\": \"IOS\",\n            \"physicalType\": \"DEVICE\",\n            \"osVersion\": \"\",\n            \"productFamily\": \"\"\n        }\n    ]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/software-fn",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "software-fn"
+                    ]
+                },
+                "description": "Responds with the FNOutput."
+            },
+            "response": [
+                {
+                    "name": "OK",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[\n  {\n    \"osType\": \"pariatur laborum quis reprehenderit\",\n    \"physicalType\": \"dolor eiusmod\",\n    \"osVersion\": \"sunt\",\n    \"productFamily\": \"voluptate reprehenderit\"\n  },\n  {\n    \"osType\": \"consequat sint\",\n    \"physicalType\": \"minim\",\n    \"osVersion\": \"labore tempor\",\n    \"productFamily\": \"officia veniam\"\n  }\n]",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/software-fn",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "software-fn"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "body": "[\n  [\n    {\n      \"caveat\": \"esse\",\n      \"content\": {\n        \"background\": \"sint ad incididunt dolor\",\n        \"fieldNoticeID\": 74231476,\n        \"hardwareLevels\": \"ut cupidatat\",\n        \"problemDescription\": \"sunt laboris ea\",\n        \"problemSymptoms\": \"sit\",\n        \"upgradeProgram\": \"ipsum officia\",\n        \"workaround\": \"nisi velit laborum\"\n      },\n      \"distributionCode\": \"magna nulla\",\n      \"fieldNoticeID\": -75448523,\n      \"fieldNoticeName\": \"incididunt Excepteur\",\n      \"fieldNoticeTypeCode\": \"adipisicing reprehenderit Excepteur quis\",\n      \"fieldNoticeURL\": \"dolore ex officia\",\n      \"firstPublishDate\": 79366893,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 25669497,\n        \"matchConfidence\": \"culpa nisi tempor officia\",\n        \"matchDefinition\": \"nisi occaecat labore do\",\n        \"matchReason\": \"culpa dolo\"\n      },\n      \"isSerialNumberAvailableCode\": \"ut laborum in aute officia\",\n      \"lastRevisionDate\": -34245881,\n      \"publishUserID\": \"ea sed qui quis\",\n      \"status\": \"ut veniam ad \"\n    },\n    {\n      \"caveat\": \"sit magna voluptate\",\n      \"content\": {\n        \"background\": \"exercitation dolor consectetur\",\n        \"fieldNoticeID\": 49827485,\n        \"hardwareLevels\": \"quis deserunt\",\n        \"problemDescription\": \"sint dolor in non\",\n        \"problemSymptoms\": \"aliqua sit reprehenderit ea\",\n        \"upgradeProgram\": \"non\",\n        \"workaround\": \"id\"\n      },\n      \"distributionCode\": \"non\",\n      \"fieldNoticeID\": 82661104,\n      \"fieldNoticeName\": \"do amet non Ut\",\n      \"fieldNoticeTypeCode\": \"adipisicing labore\",\n      \"fieldNoticeURL\": \"magna sit\",\n      \"firstPublishDate\": -9624861,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 23881340,\n        \"matchConfidence\": \"nostrud elit qui Ut\",\n        \"matchDefinition\": \"occaecat aute labore dolore\",\n        \"matchReason\": \"laboris mollit\"\n      },\n      \"isSerialNumberAvailableCode\": \"ipsum pariatur\",\n      \"lastRevisionDate\": 84815185,\n      \"publishUserID\": \"sunt do\",\n      \"status\": \"in consequat occaecat\"\n    }\n  ],\n  [\n    {\n      \"caveat\": \"labore nostrud\",\n      \"content\": {\n        \"background\": \"anim eu officia\",\n        \"fieldNoticeID\": 91293407,\n        \"hardwareLevels\": \"ex dolor Lorem\",\n        \"problemDescription\": \"ipsum anim dolor dolore\",\n        \"problemSymptoms\": \"cupidatat \",\n        \"upgradeProgram\": \"occaecat qui\",\n        \"workaround\": \"officia laborum dolore\"\n      },\n      \"distributionCode\": \"voluptate quis sed do\",\n      \"fieldNoticeID\": 33329023,\n      \"fieldNoticeName\": \"magna consequat veniam sint est\",\n      \"fieldNoticeTypeCode\": \"occaecat Lorem\",\n      \"fieldNoticeURL\": \"eu minim amet ad\",\n      \"firstPublishDate\": 1053922,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 44012150,\n        \"matchConfidence\": \"culpa adipisicing consectetur id\",\n        \"matchDefinition\": \"in \",\n        \"matchReason\": \"fugiat sed est Excepteur\"\n      },\n      \"isSerialNumberAvailableCode\": \"fugiat\",\n      \"lastRevisionDate\": -72596047,\n      \"publishUserID\": \"quis nisi pariatur\",\n      \"status\": \"laborum\"\n    },\n    {\n      \"caveat\": \"proident nostrud in et\",\n      \"content\": {\n        \"background\": \"Lorem anim dolor\",\n        \"fieldNoticeID\": 41874294,\n        \"hardwareLevels\": \"incididunt\",\n        \"problemDescription\": \"tempor ullamco nos\",\n        \"problemSymptoms\": \"ullamco cillum ipsum\",\n        \"upgradeProgram\": \"magna mollit voluptate anim\",\n        \"workaround\": \"deserunt officia nostrud velit\"\n      },\n      \"distributionCode\": \"ea enim Ut\",\n      \"fieldNoticeID\": -15699903,\n      \"fieldNoticeName\": \"irure aute anim\",\n      \"fieldNoticeTypeCode\": \"in\",\n      \"fieldNoticeURL\": \"id do pariatur anim\",\n      \"firstPublishDate\": 42131093,\n      \"fnmatchOutput\": {\n        \"fieldNoticeID\": 79119178,\n        \"matchConfidence\": \"ea ut laborum incididunt dolor\",\n        \"matchDefinition\": \"cillum cupidatat dolor enim do\",\n        \"matchReason\": \"amet consect\"\n      },\n      \"isSerialNumberAvailableCode\": \"aliquip Duis nostrud in et\",\n      \"lastRevisionDate\": -56197428,\n      \"publishUserID\": \"ipsum ullamco\",\n      \"status\": \"do\"\n    }\n  ]\n]"
+                }
+            ]
+        },
+        {
+            "name": "Get Psirt Alerts",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                    },
+                    {
+                        "key": "x-Bypass-value",
+                        "value": "R0NpFWK3pdEA",
+                        "type": "text"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "{{Authorization}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"CavId\": \"\",\n    \"CavBuId\": \"\",\n    \"SerialNumber\": \"\",\n    \"inputdata\": [\n        {\n            \"physicalType\": \"chassis\",\n            \"softwareType\": \"IOS\",\n            \"chassisPidList\": [\n                \"\",\n                \"\"\n            ],\n            \"featureNames\": [\n                \"\",\n                \"\"\n            ],\n            \"imageName\": \"\",\n            \"modulePidList\": [\n                \"\",\n                \"\"\n            ],\n            \"patchNumber\": \"\",\n            \"smuNames\": [\n                \"2323233\",\n                \"2323233\"\n            ],\n            \"softwareVersion\": \"1\"\n        }\n    ]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/psirt",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "psirt"
+                    ]
+                },
+                "description": "Responds with the PSIRTOutputDetails."
+            },
+            "response": [
+                {
+                    "name": "OK",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[\n  {\n    \"physicalType\": \"ut esse\",\n    \"softwareType\": \"do esse\",\n    \"chassisPidList\": [\n      \"Excepteur mollit\",\n      \"nisi est\"\n    ],\n    \"featureNames\": [\n      \"amet aute ut\",\n      \"reprehenderit ea\"\n    ],\n    \"imageName\": \"incid\",\n    \"modulePidList\": [\n      \"esse \",\n      \"amet ut id dolore\"\n    ],\n    \"patchNumber\": \"irure laboris veniam incididunt\",\n    \"smuNames\": [\n      \"minim ullamco qui aliquip\",\n      \"tempor consequat velit\"\n    ],\n    \"softwareVersion\": \"eu\"\n  },\n  {\n    \"physicalType\": \"fugiat ut officia\",\n    \"softwareType\": \"quis non irure in\",\n    \"chassisPidList\": [\n      \"eu sunt\",\n      \"quis culpa\"\n    ],\n    \"featureNames\": [\n      \"magna velit Duis co\",\n      \"in exercitation ea minim\"\n    ],\n    \"imageName\": \"proident incidi\",\n    \"modulePidList\": [\n      \"in id commodo irure\",\n      \"Lorem dolore esse non\"\n    ],\n    \"patchNumber\": \"minim sit dolore\",\n    \"smuNames\": [\n      \"eu do\",\n      \"exercitation ut\"\n    ],\n    \"softwareVersion\": \"exercitation et irure sunt esse\"\n  }\n]",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "url": {
+                            "raw": "{{baseUrl}}/psirt",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "psirt"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "body": "[\n  [\n    {\n      \"advisoryId\": \"eu officia ipsum\",\n      \"alertStatusCd\": \"velit nisi\",\n      \"announceTypeName\": \"d\",\n      \"codeName\": \"est Excepteur\",\n      \"cveId\": \"anim ullamco\",\n      \"cvssScore\": \"nisi amet\",\n      \"cvssTempScore\": \"magna labore\",\n      \"defectID\": \"c\",\n      \"detailText\": \"eu officia sit laborum\",\n      \"documentID\": \"officia commodo velit sit nostrud\",\n      \"headlineName\": \"sit in anim aliq\",\n      \"mappingStateName\": \"est ut elit ullamco\",\n      \"matchConfidence\": \"dolor qui ad\",\n      \"matchDefinition\": \"ad velit veniam\",\n      \"matchReason\": \"exercitation in dolor\",\n      \"psirtID\": 66118154,\n      \"psirtUrlText\": \"reprehenderit magna\",\n      \"publicReleaseInd\": \"ex aliquip veniam\",\n      \"publishDate\": 28729236,\n      \"revisedDate\": 16642990,\n      \"revisionNum\": \"enim\",\n      \"severityLevelName\": \"officia tempor non\",\n      \"summaryText\": \"ad ipsum\"\n    },\n    {\n      \"advisoryId\": \"no\",\n      \"alertStatusCd\": \"dolore eiusmod aute exercitation\",\n      \"announceTypeName\": \"amet esse\",\n      \"codeName\": \"Excepteur\",\n      \"cveId\": \"aliquip veniam\",\n      \"cvssScore\": \"cillum est ad dolore eu\",\n      \"cvssTempScore\": \"pariatur sit\",\n      \"defectID\": \"cillum aute \",\n      \"detailText\": \"laborum ad\",\n      \"documentID\": \"nisi id\",\n      \"headlineName\": \"voluptate Ut\",\n      \"mappingStateName\": \"amet ex consequ\",\n      \"matchConfidence\": \"cillum consectetur voluptate\",\n      \"matchDefinition\": \"in sunt consectetur\",\n      \"matchReason\": \"dolore aliqua\",\n      \"psirtID\": 44081087,\n      \"psirtUrlText\": \"dolore aute do minim\",\n      \"publicReleaseInd\": \"dolor ipsum veniam incididunt Ut\",\n      \"publishDate\": 10509269,\n      \"revisedDate\": 30135161,\n      \"revisionNum\": \"\",\n      \"severityLevelName\": \"cillum pariatur\",\n      \"summaryText\": \"sint cons\"\n    }\n  ],\n  [\n    {\n      \"advisoryId\": \"in aliquip dolore Ut\",\n      \"alertStatusCd\": \"enim eu incididunt\",\n      \"announceTypeName\": \"laboris\",\n      \"codeName\": \"exercitation veniam Excepteur ad\",\n      \"cveId\": \"do sint adipisicing\",\n      \"cvssScore\": \"a\",\n      \"cvssTempScore\": \"ipsum officia dolore ut\",\n      \"defectID\": \"id ullamco\",\n      \"detailText\": \"voluptat\",\n      \"documentID\": \"veniam laborum\",\n      \"headlineName\": \"deserunt nisi\",\n      \"mappingStateName\": \"tempor\",\n      \"matchConfidence\": \"ullamco id ipsum ame\",\n      \"matchDefinition\": \"ullamco\",\n      \"matchReason\": \"dolore in\",\n      \"psirtID\": -11478952,\n      \"psirtUrlText\": \"magna elit et exercitation velit\",\n      \"publicReleaseInd\": \"culpa dolore\",\n      \"publishDate\": -57979516,\n      \"revisedDate\": -65524352,\n      \"revisionNum\": \"aliqua Lorem sunt officia in\",\n      \"severityLevelName\": \"id proident Duis nostrud\",\n      \"summaryText\": \"dolore Excepteur mollit enim laborum\"\n    },\n    {\n      \"advisoryId\": \"sit\",\n      \"alertStatusCd\": \"in qui proident\",\n      \"announceTypeName\": \"dolor cupidatat sunt officia in\",\n      \"codeName\": \"magna velit\",\n      \"cveId\": \"deserunt id laboris\",\n      \"cvssScore\": \"enim culpa veniam sint\",\n      \"cvssTempScore\": \"commodo sint eu et Lorem\",\n      \"defectID\": \"irure velit \",\n      \"detailText\": \"sit qui quis\",\n      \"documentID\": \"Excepteu\",\n      \"headlineName\": \"occaecat reprehenderit ad\",\n      \"mappingStateName\": \"et Ut\",\n      \"matchConfidence\": \"eiusmod qui elit et aliqua\",\n      \"matchDefinition\": \"occaecat deserunt nostrud dolore\",\n      \"matchReason\": \"dolore magna in eu\",\n      \"psirtID\": 11588304,\n      \"psirtUrlText\": \"labore ex\",\n      \"publicReleaseInd\": \"aute magna ut dolor reprehenderit\",\n      \"publishDate\": -32044149,\n      \"revisedDate\": 90167930,\n      \"revisionNum\": \"dolore et id eiusm\",\n      \"severityLevelName\": \"dolore quis voluptat\",\n      \"summaryText\": \"adipisicing dolor elit\"\n    }\n  ]\n]"
+                }
+            ]
+        }
+    ],
+    "event": [
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "https://edge-dev.edge-dev-usw2.io.csco.cloud/product-alert-service",
+            "type": "string"
+        }
+    ]
+}
