@@ -1,0 +1,119 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "FIS-API Postman",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "https://edge-dev.edge-dev-usw2.io.csco.cloud"
+    }
+  ],
+  "paths": {
+    "/feature-identification-service/info": {
+      "get": {
+        "summary": "info",
+        "description": "info",
+        "operationId": "info",
+        "parameters": [
+          {
+            "name": "x-Bypass-value",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "R0NpFWK3pdEA"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/feature-identification-service/features": {
+      "post": {
+        "summary": "features",
+        "description": "features",
+        "operationId": "features",
+        "parameters": [
+          {
+            "name": "x-Bypass-value",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "R0NpFWK3pdEA"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "dataType": {
+                    "type": "string",
+                    "example": "show run"
+                  },
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "fisDeviceProfile": {
+                    "type": "string",
+                    "example": "{\"OsType\": \"IOS\",\r\n\"OsVersion\":\"12.1\",\r\n\"ProductFamily\":\"Cisco Catalyst 6000 Router Module\",\r\n\"ProductType\":\"\",\r\n\"ConfigType\":\"\"\r\n}"
+                  },
+                  "x-Bypass-value": {
+                    "type": "string",
+                    "example": "R0NpFWK3pdEA"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/feature-identification-service/health": {
+      "get": {
+        "summary": "health",
+        "description": "health",
+        "operationId": "health",
+        "parameters": [
+          {
+            "name": "x-Bypass-value",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "example": "R0NpFWK3pdEA"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
