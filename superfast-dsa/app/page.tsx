@@ -2,14 +2,18 @@
 import useLLM from "usellm";
 import { useState } from "react";
 
+const API_URL = "https://api.openai.com/v1/chat/completions"
+
 export default function MyComponent() {
   const llm = useLLM("/api/llmservice");
   const [result, setResult] = useState("");
 
   const [problem, setProblem] = useState("");
   const [code, setCode] = useState("");
+  const [key, setKey] = useState("");
 
-  function handleSubmit() {
+
+  async function handleSubmit() {
     if (!problem) {
       window.alert("Problem statement is required");
       return;
@@ -19,7 +23,18 @@ export default function MyComponent() {
       window.alert("Code is required");
       return;
     }
-
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + key,
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: updatedMsg,
+        stream: true,
+      }),
+    });
     llm.chat({
       template: "leetcode-assistant",
       inputs: {
@@ -30,6 +45,59 @@ export default function MyComponent() {
       onStream: (message) => setResult(message.content),
       onError: (error) => console.error("Failed to send", error),
     });
+  }
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + key,
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: updatedMsg,
+        stream: true,
+      }),
+    });
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error.message);
+    }
+    const reader = response.body.getReader();
+
+    let newMsg = "";
+    const parser = createParser((event) => {
+      if (event.type === "event") {
+        const data = event.data;
+        if (data === "[DONE]") {
+          return;
+        }
+        const json = JSON.parse(event.data);
+        const content = json.choices[0].delta.content;
+
+        if (!content) {
+          return;
+        }
+        newMsg += content;
+
+        setMessages([
+          ...updatedMsg,
+          { role: 'assistant', content: newMsg },
+        ]);
+      } else {
+        return "";
+      }
+    });
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      const text = new TextDecoder().decode(value);
+      parser.feed(text);
+    }
+  } catch (error) {
+    console.error(error);
+    window.alert("Error: Invalid API key");
   }
 
   return (
@@ -42,6 +110,13 @@ export default function MyComponent() {
           Your personal programming coach powered by ChatGPT. Just share your
           solution and get instant feedback on what is going wrong.
         </div>
+        <div className="">
+            <input type="password"
+              className="border p-1 rounded"
+              onChange={(e) => setKey(e.target.value)}
+              value={key}
+              placeholder="API Key here" />
+          </div>
       </div>
 
       <div className="max-w-4xl w-full mx-auto px-4">
